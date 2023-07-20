@@ -79,9 +79,9 @@ public class Main {
         LinkedList studentList = new LinkedList();
 
         // Create student objects
-        Student student1 = new Student("alexa", 34534, 77);
-        Student student2 = new Student("ding chang", 67556, 90);
-        Student student3 = new Student("sujan shah", 34544, 98);
+        Student student1 = new Student("Alexa", 34534, 77);
+        Student student2 = new Student("Ding chang", 67556, 90);
+        Student student3 = new Student("Sujan shah", 34544, 98);
 
         // Add students to the linked list
         studentList.addStudent(student1);
