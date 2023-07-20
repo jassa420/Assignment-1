@@ -1,0 +1,247 @@
+import java.util.LinkedList;
+
+import java.util.Queue;
+
+
+
+class Athlete {
+
+    String name;
+
+    int age;
+
+    int runningDistanceEachDay;
+
+
+
+    public Athlete(String name, int age, int runningDistanceEachDay) {
+
+        this.name = name;
+
+        this.age = age;
+
+        this.runningDistanceEachDay = runningDistanceEachDay;
+
+    }
+
+}
+
+
+
+class QueueManager {
+
+    private Queue<Athlete> queue;
+
+
+
+    public QueueManager() {
+
+        queue = new LinkedList<>();
+
+    }
+
+
+
+    public void enqueue(Athlete athlete) {
+
+        queue.add(athlete);
+
+    }
+
+
+
+    public Athlete dequeue() {
+
+        return queue.poll();
+
+    }
+
+
+
+    public boolean isEmpty() {
+
+        return queue.isEmpty();
+
+    }
+
+
+
+    public int size() {
+
+        return queue.size();
+
+    }
+
+
+
+    public Athlete peek() {
+
+        return queue.peek();
+
+    }
+
+}
+
+//In the code above, we have an Athlete class representing an athlete with name, age, and runningDistanceEachDay properties. Then, we have an AthleteQueue class that uses the LinkedList data structure provided by Java to manage the queue of athletes.
+
+
+
+//The enqueue method allows you to add an athlete to the end of the queue, and the dequeue method removes and returns the athlete at the front of the queue. The isEmpty method checks if the queue is empty, and the size method returns the number of athletes in the queue. Finally, the peek method returns the athlete at the front of the queue without removing it.
+
+
+
+//You can use the AthleteQueue class as follows:
+
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        QueueManager athleteQueue = new QueueManager();
+
+
+
+        // Enqueuing athletes
+
+        Athlete athlete1 = new Athlete("John", 33, 7);
+        Athlete athlete2 = new Athlete("Mark", 23, 6);
+        Athlete athlete3 = new Athlete("Edison", 25, 9);
+        Athlete athlete4 = new Athlete("Smith", 28, 10);
+        Athlete athlete5 = new Athlete("David", 32, 4);
+        Athlete athlete6 = new Athlete("Steve", 23, 6);
+        Athlete athlete7 = new Athlete("Simar", 30, 9);
+        Athlete athlete8 = new Athlete("Ash", 26, 7);
+        Athlete athlete9 = new Athlete("Josh", 24, 9);
+        Athlete athlete10 = new Athlete("William", 27, 6);
+
+        athleteQueue.enqueue(athlete1);
+        athleteQueue.enqueue(athlete2);
+        athleteQueue.enqueue(athlete3);
+        athleteQueue.enqueue(athlete4);
+        athleteQueue.enqueue(athlete5);
+        athleteQueue.enqueue(athlete6);
+        athleteQueue.enqueue(athlete7);
+        athleteQueue.enqueue(athlete8);
+        athleteQueue.enqueue(athlete9);
+        athleteQueue.enqueue(athlete10);
+
+
+
+        System.out.println("Queue size: " + athleteQueue.size());
+
+
+
+        // Dequeuing an athlete
+
+        Athlete dequeuedAthlete = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete.name);
+
+
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+
+        // Peeking at the front athlete
+
+        Athlete frontAthlete = athleteQueue.peek();
+
+        System.out.println("Front athlete: " + frontAthlete.name);
+
+
+
+        Athlete dequeuedAthlete2 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete2.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+        Athlete dequeuedAthlete3 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete3.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+
+        Athlete dequeuedAthlete4 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete4.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+
+        Athlete dequeuedAthlete5 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete5.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+        Athlete dequeuedAthlete6 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete6.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+
+        Athlete dequeuedAthlete7 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete7.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+
+        Athlete dequeuedAthlete8 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete8.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+
+        Athlete dequeuedAthlete9 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete9.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+
+        Athlete dequeuedAthlete10 = athleteQueue.dequeue();
+
+        System.out.println("Dequeued athlete: " + dequeuedAthlete10.name);
+
+        // Checking if the queue is empty
+
+        System.out.println("Is queue empty? " + athleteQueue.isEmpty());
+
+
+
+    }
+
+}
